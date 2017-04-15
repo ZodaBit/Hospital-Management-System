@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ultrasoundmodel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ultrasoundmodelStoreContainer">
+          <EntitySet Name="ultrsasoundrequst" EntityType="ultrasoundmodel.Store.ultrsasoundrequst" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="ultrsasoundrequst">
+          <Key>
+            <PropertyRef Name="Ultrsoundrequsid" />
+          </Key>
+          <Property Name="Ultrsoundrequsid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PatientID" Type="int" />
+          <Property Name="PatientName" Type="varchar(max)" />
+          <Property Name="PaitentFatherName" Type="varchar(max)" />
+          <Property Name="Sex" Type="varchar" MaxLength="50" />
+          <Property Name="Age" Type="int" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="PhysicianName" Type="varchar(max)" />
+          <Property Name="InvestigationType" Type="varchar(max)" />
+          <Property Name="InvestigationEntity" Type="varchar(max)" />
+          <Property Name="ChargeAmount" Type="int" />
+          <Property Name="ChargeStatus" Type="varchar" MaxLength="50" />
+          <Property Name="Result" Type="varchar(max)" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ultrasoundmodel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ultrasoundent" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ultrsasoundrequsts" EntityType="ultrasoundmodel.ultrsasoundrequst" />
+        </EntityContainer>
+        <EntityType Name="ultrsasoundrequst">
+          <Key>
+            <PropertyRef Name="Ultrsoundrequsid" />
+          </Key>
+          <Property Type="Int32" Name="Ultrsoundrequsid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="PatientID" />
+          <Property Type="String" Name="PatientName" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PaitentFatherName" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Sex" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Age" />
+          <Property Type="DateTime" Name="Date" Precision="3" />
+          <Property Type="String" Name="PhysicianName" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="InvestigationType" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="InvestigationEntity" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="ChargeAmount" />
+          <Property Type="String" Name="ChargeStatus" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Result" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ultrasoundmodelStoreContainer" CdmEntityContainer="ultrasoundent">
+          <EntitySetMapping Name="ultrsasoundrequsts">
+            <EntityTypeMapping TypeName="ultrasoundmodel.ultrsasoundrequst">
+              <MappingFragment StoreEntitySet="ultrsasoundrequst">
+                <ScalarProperty Name="Result" ColumnName="Result" />
+                <ScalarProperty Name="ChargeStatus" ColumnName="ChargeStatus" />
+                <ScalarProperty Name="ChargeAmount" ColumnName="ChargeAmount" />
+                <ScalarProperty Name="InvestigationEntity" ColumnName="InvestigationEntity" />
+                <ScalarProperty Name="InvestigationType" ColumnName="InvestigationType" />
+                <ScalarProperty Name="PhysicianName" ColumnName="PhysicianName" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="PaitentFatherName" ColumnName="PaitentFatherName" />
+                <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+                <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+                <ScalarProperty Name="Ultrsoundrequsid" ColumnName="Ultrsoundrequsid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9f891ff9c7134a8393850ef8f995e075" Name="Diagram1" ZoomLevel="78">
+        <EntityTypeShape EntityType="HMSgeneralmodellls.AmbulanceStatu" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.BedRequst" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Biochemistry" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.BirthRegestration" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Blood" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Charge" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.ChargeOrder" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.DiagnosisOrder" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.FirstDiagnosi" Width="1.5" PointX="4.5" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Hamatology" Width="1.5" PointX="4.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Labrequst" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Labtest" Width="1.5" PointX="12.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.OutpaitentActivity" Width="1.5" PointX="8.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Perscript" Width="1.5" PointX="14.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Possition" Width="1.5" PointX="14.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.QueaManagment" Width="1.5" PointX="10.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Refferapproved" Width="1.5" PointX="16.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Reservation" Width="1.5" PointX="16.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.RoomService" Width="1.5" PointX="12.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.RoomStatu" Width="1.5" PointX="16.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.StaffAttendance" Width="1.5" PointX="0.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Staffregistration" Width="1.5" PointX="2.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Stool" Width="1.5" PointX="4.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.StoolTest" Width="1.5" PointX="6.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Tax" Width="1.5" PointX="14.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.xray" Width="1.5" PointX="16.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Previusillinese" Width="1.5" PointX="5.1548704528970974" PointY="24.339869436034871" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.ECGrequst" Width="1.5" PointX="10.446144237390787" PointY="17.908907019490798" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.IEntity" Width="1.5" PointX="4.2690796760232557" PointY="7.1258964869779984" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.ISubentity" Width="1.5" PointX="3.8916686996313135" PointY="29.886181547253479" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.IType" Width="1.5" PointX="1.3221035438227018" PointY="6.93092923189091" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.ultrsasoundrequst" Width="1.5" PointX="11.37913241022226" PointY="19.299488031910492" />
+        <AssociationConnector Association="HMSgeneralmodellls.FK_Labtest_Labtest" />
+        <AssociationConnector Association="HMSgeneralmodellls.FK_ISubentity_IEntity" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Perscription" Width="1.5" PointX="9.32637691932096" PointY="11.654738237920562" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.OperationRequst" Width="1.5" PointX="10.875" PointY="9.875" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Reffer" Width="1.5" PointX="8.6672924666978837" PointY="7.1505647036948075" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.medicalcerteficateee" Width="1.5" PointX="10.5" PointY="1.5" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.foAddress" Width="1.5" PointX="17.375" PointY="1.75" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.foDoctor" Width="1.5" PointX="22.375" PointY="0.75" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.foDoctorAssignment" Width="1.5" PointX="24.625" PointY="6.5" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.foNewPatient" Width="1.5" PointX="21.625" PointY="12.875" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.foVital" Width="1.5" PointX="21.625" PointY="3.75" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.secPermission" Width="1.5" PointX="19.375" PointY="16.125" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.secUser" Width="1.5" PointX="21.625" PointY="15.875" />
+        <AssociationConnector Association="HMSgeneralmodellls.FK_foDoctorAssignment_foDoctor" />
+        <AssociationConnector Association="HMSgeneralmodellls.secUserPermission" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Pastmedicalhistory" Width="1.5" PointX="19.375" PointY="0.75" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.family" Width="1.5" PointX="4.4416881634116585" PointY="29.865458919604055" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.xraygroup" Width="1.5" PointX="4.5781748278896206" PointY="29.163805915584696" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.ultrasoundgroup" Width="1.5" PointX="6.85728758706585" PointY="20.773345152276264" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Labelemntadd" Width="1.5" PointX="11.032965525534454" PointY="8.73074172843748" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Labgroupname" Width="1.5" PointX="4.8583261728558345" PointY="22.142289261399902" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.ecgelemntadd" Width="1.5" PointX="11.916495954578974" PointY="16.955399133709911" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Ecggroup" Width="1.5" PointX="3.9910560101229025" PointY="7.3880210106205295" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.PaitientHistory" Width="1.5" PointX="8.9447455429214724" PointY="9.0929292184733459" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.FoPastMedicalHistory" Width="1.5" PointX="10.010360558522102" PointY="7.7185225820720769" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.foPatient" Width="1.5" PointX="0.75" PointY="21.75" />
+        <AssociationConnector Association="HMSgeneralmodellls.FK_foDoctorAssignment_foPatient" />
+        <AssociationConnector Association="HMSgeneralmodellls.FK_foNewPatient_foPatient" />
+        <AssociationConnector Association="HMSgeneralmodellls.FK_FoPastMedicalHistory_foPatient" />
+        <AssociationConnector Association="HMSgeneralmodellls.FK_foVital_foPatient" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Ward" Width="1.5" PointX="13.375" PointY="22" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.bedward" Width="1.5" PointX="19.375" PointY="19.75" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.xrayrequ" Width="1.5" PointX="9.2023082790907047" PointY="4.36879688704796" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.DrugDescription" Width="1.5" PointX="0.844415277635872" PointY="19.00559055200107" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Labratoryresult" Width="1.5" PointX="2.6180749622257773" PointY="21.202772150376241" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.DeathRegestration" Width="1.5" PointX="21.375" PointY="19.75" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Branch" Width="1.5" PointX="0.75" PointY="13.75" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Department" Width="1.5" PointX="23.75" PointY="19.75" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.PatientRegistration" Width="1.5" PointX="23.375" PointY="22.75" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Room" Width="1.5" PointX="11.663734875462826" PointY="9.5990897312756118" />
+        <AssociationConnector Association="HMSgeneralmodellls.FK_Room_Ward" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Item" Width="1.5" PointX="0.44452833963768945" PointY="19.175382235634785" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.drugitem" Width="1.5" PointX="6.9863791833568278" PointY="21.215809042200359" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Xrayresultview" Width="1.5" PointX="9.437296186311773" PointY="18.345227756698257" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.UltrasoundRsultview" Width="1.5" PointX="2.4670650467588868" PointY="19.323385798988578" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.Xrayentityadd" Width="1.5" PointX="0.2980177850918927" PointY="16.203197352682796" />
+        <EntityTypeShape EntityType="HMSgeneralmodellls.ultrasoundelemntadd" Width="1.5" PointX="3.3527686630155742" PointY="2.6846207839830876" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

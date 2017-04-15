@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="drugelementaddmodel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="drugelementaddmodelStoreContainer">
+          <EntitySet Name="drugitem" EntityType="drugelementaddmodel.Store.drugitem" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="drugitem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DrugGroup" Type="varchar(max)" />
+          <Property Name="DrugName" Type="varchar(max)" />
+          <Property Name="DrugQuantity" Type="int" />
+          <Property Name="DrugRefills" Type="varchar(max)" />
+          <Property Name="DrugDosage" Type="varchar(max)" />
+          <Property Name="DrugApplication" Type="varchar(max)" />
+          <Property Name="DrugFrequency" Type="varchar(max)" />
+          <Property Name="DrugPeriod" Type="varchar(max)" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="drugelementaddmodel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="drugitementity" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="drugitems" EntityType="drugelementaddmodel.drugitem" />
+        </EntityContainer>
+        <EntityType Name="drugitem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DrugGroup" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="DrugName" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="DrugQuantity" Type="Int32" />
+          <Property Name="DrugRefills" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="DrugDosage" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="DrugApplication" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="DrugFrequency" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="DrugPeriod" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="drugelementaddmodelStoreContainer" CdmEntityContainer="drugitementity">
+          <EntitySetMapping Name="drugitems">
+            <EntityTypeMapping TypeName="drugelementaddmodel.drugitem">
+              <MappingFragment StoreEntitySet="drugitem">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DrugGroup" ColumnName="DrugGroup" />
+                <ScalarProperty Name="DrugName" ColumnName="DrugName" />
+                <ScalarProperty Name="DrugQuantity" ColumnName="DrugQuantity" />
+                <ScalarProperty Name="DrugRefills" ColumnName="DrugRefills" />
+                <ScalarProperty Name="DrugDosage" ColumnName="DrugDosage" />
+                <ScalarProperty Name="DrugApplication" ColumnName="DrugApplication" />
+                <ScalarProperty Name="DrugFrequency" ColumnName="DrugFrequency" />
+                <ScalarProperty Name="DrugPeriod" ColumnName="DrugPeriod" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,1353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85B9E587-1888-45E5-B94E-9881F3EBEBBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HospitalMS</RootNamespace>
+    <AssemblyName>HospitalMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hospital.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v14.1" />
+    <Reference Include="DevExpress.Charts.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="DevExpress.DataAccess.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Persistent.Base.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.SpellChecker.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core" />
+    <Reference Include="DevExpress.Utils.v14.1.UI, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="DevExpress.XtraGauges.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.1.Extensions, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.1.Extensions, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1.Extensions, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="account Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="account Report.Designer.cs">
+      <DependentUpon>account Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllPatientsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllPatientsForm.designer.cs">
+      <DependentUpon>AllPatientsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AmbulanceStatu.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentBiz.cs" />
+    <Compile Include="Appointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments.Designer.cs">
+      <DependentUpon>Appointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BedRequst.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bedward.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bedwards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bedwards.Designer.cs">
+      <DependentUpon>bedwards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biochemistry.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BirthDayregistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BirthDayregistration.Designer.cs">
+      <DependentUpon>BirthDayregistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BirthDayregistrationBiz.cs" />
+    <Compile Include="BirthRegestration.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bitrhthata.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bitrhthata.Designer.cs">
+      <DependentUpon>bitrhthata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Blood.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Branch.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BranchBiz.cs" />
+    <Compile Include="BranchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchForm.Designer.cs">
+      <DependentUpon>BranchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChargeOrder.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Charging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charging.Designer.cs">
+      <DependentUpon>Charging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctscanorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ctscanorder.Designer.cs">
+      <DependentUpon>Ctscanorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTscanview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTscanview.designer.cs">
+      <DependentUpon>CTscanview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeathRegestration.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Deathregistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deathregistration.Designer.cs">
+      <DependentUpon>Deathregistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeathRegistrationBiz.cs" />
+    <Compile Include="Department.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentBiz.cs" />
+    <Compile Include="Department_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department_Form.Designer.cs">
+      <DependentUpon>Department_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiagnosisOrder.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocterAppointmnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocterAppointmnet.Designer.cs">
+      <DependentUpon>DocterAppointmnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docters.Designer.cs">
+      <DependentUpon>Docters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docterview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docterview.Designer.cs">
+      <DependentUpon>Docterview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorBiz.cs" />
+    <Compile Include="Drug Interaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drug Interaction.Designer.cs">
+      <DependentUpon>Drug Interaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugAdding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrugAdding.Designer.cs">
+      <DependentUpon>DrugAdding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugDescription.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DrugIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrugIndex.Designer.cs">
+      <DependentUpon>DrugIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="drugitem.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="drugitemmodel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drugitemmodel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="drugitemmodel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drugitemmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="drugitemmodel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>drugitemmodel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ecgelemntadd.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ecggroup.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ECGorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ECGorder.Designer.cs">
+      <DependentUpon>ECGorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ECGrequst.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Enum.cs" />
+    <Compile Include="extara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="extara.Designer.cs">
+      <DependentUpon>extara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="family.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FirstDiagnosi.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="foAddress.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="foDoctor.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="foDoctorAssignment.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="foNewPatient.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FoPastMedicalHistory.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FoPastMedicalHistory1.cs" />
+    <Compile Include="FoPastMedicalHistory2.cs" />
+    <Compile Include="foPatient.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="foPatientExtension.cs" />
+    <Compile Include="HMSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HMSDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HMSDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ItemBiz.cs" />
+    <Compile Include="Labmelesemasayaform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labmelesemasayaform.Designer.cs">
+      <DependentUpon>Labmelesemasayaform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="labmelsemasaya.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="labmelsemasaya.Designer.cs">
+      <DependentUpon>labmelsemasaya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="labrepo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="labrepo.Designer.cs">
+      <DependentUpon>labrepo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foVital.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="frntPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frntPart.Designer.cs">
+      <DependentUpon>frntPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontOfficeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontOfficeForm.designer.cs">
+      <DependentUpon>FrontOfficeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gender.cs" />
+    <Compile Include="GenericBiz.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Hamatology.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HMSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HMSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HMSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HMSgeneral.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSgeneral.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HMSgeneral.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HMSgeneral.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSgeneral.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="IEntity.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IEntityWithId.cs" />
+    <Compile Include="inpatient .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inpatient .Designer.cs">
+      <DependentUpon>inpatient .cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvestigationOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvestigationOrder.Designer.cs">
+      <DependentUpon>InvestigationOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ISubentity.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ItemImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemImport.Designer.cs">
+      <DependentUpon>ItemImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IType.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Labelemntadd.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Labgroupname.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Labratory.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Labratory.Designer.cs">
+      <DependentUpon>Labratory.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="LabratoryOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabratoryOrder.Designer.cs">
+      <DependentUpon>LabratoryOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labratoryresult.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LabreadingResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabreadingResult.Designer.cs">
+      <DependentUpon>LabreadingResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labrequst.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="labrequstorder.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>labrequstorder.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="labrequstorder.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>labrequstorder.tt</DependentUpon>
+    </Compile>
+    <Compile Include="labrequstorder.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>labrequstorder.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="labrequstts.cs" />
+    <Compile Include="Labrprt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labrprt.Designer.cs">
+      <DependentUpon>Labrprt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labtest.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Labtestitem.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labtestitem.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LabTestitem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabTestitem.Designer.cs">
+      <DependentUpon>LabTestitem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labtestitem1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labtestitem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Labtestitem1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labtestitem.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MaternalState.cs" />
+    <Compile Include="medhanit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="medhanit.Designer.cs">
+      <DependentUpon>medhanit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="medicalcerteficateee.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalcerteficateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalcerteficateForm.Designer.cs">
+      <DependentUpon>MedicalcerteficateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="medicalcerteficateview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="medicalcerteficateview.Designer.cs">
+      <DependentUpon>medicalcerteficateview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicalcerteficatorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicalcerteficatorder.Designer.cs">
+      <DependentUpon>Medicalcerteficatorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newfrontpart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newfrontpart.Designer.cs">
+      <DependentUpon>Newfrontpart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewPatientsWaitingListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewPatientsWaitingListForm.designer.cs">
+      <DependentUpon>NewPatientsWaitingListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPDs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPDs.Designer.cs">
+      <DependentUpon>OPDs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperationRequst.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Outpaitent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Outpaitent.Designer.cs">
+      <DependentUpon>Outpaitent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpaitentActivity.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Paitenthistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paitenthistory.designer.cs">
+      <DependentUpon>Paitenthistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaitientHistory.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pastmedicalhistory.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PatientBiz.cs" />
+    <Compile Include="PatientEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientEditorForm.Designer.cs">
+      <DependentUpon>PatientEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientRegistration.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Perscri.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Perscri.Designer.cs">
+      <DependentUpon>Perscri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perscript.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Perscription.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy.Designer.cs">
+      <DependentUpon>Pharmacy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Possition.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PossitionsBiz.cs" />
+    <Compile Include="possition_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="possition_Form.Designer.cs">
+      <DependentUpon>possition_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Previusillinese.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressNote.Designer.cs">
+      <DependentUpon>ProgressNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ptnthistrrepry.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ptnthistrrepry.Designer.cs">
+      <DependentUpon>ptnthistrrepry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueaManagment.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reffer.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Refferapproved.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefferForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RefferForm.Designer.cs">
+      <DependentUpon>RefferForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reffermelse.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reffermelse.Designer.cs">
+      <DependentUpon>Reffermelse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Refferorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Refferorder.Designer.cs">
+      <DependentUpon>Refferorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reservation.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Response.cs" />
+    <Compile Include="Room.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RoomRegistrationBiz.cs" />
+    <Compile Include="RoomService.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RoomStatu.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SecBiz.cs" />
+    <Compile Include="secPermission.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security.cs" />
+    <Compile Include="secUser.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Splush.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splush.Designer.cs">
+      <DependentUpon>Splush.cs</DependentUpon>
+    </Compile>
+    <Compile Include="srviccharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="srviccharge.Designer.cs">
+      <DependentUpon>srviccharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffAttendance.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Staffregistration.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffRegistrations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffRegistrations.Designer.cs">
+      <DependentUpon>StaffRegistrations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffRegistrationsBiz.cs" />
+    <Compile Include="Stool.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoolTest.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tax.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaxType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaxType.Designer.cs">
+      <DependentUpon>TaxType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ultrasoudmelse.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ultrasoudmelse.Designer.cs">
+      <DependentUpon>Ultrasoudmelse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ultrasoundelemntadd.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ultrasoundgroup.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ultrasoundmelseresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ultrasoundmelseresult.Designer.cs">
+      <DependentUpon>Ultrasoundmelseresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ultrasoundmodel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ultrasoundmodel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ultrasoundmodel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ultrasoundmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ultrasoundmodel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ultrasoundmodel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Ultrasoundoredr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ultrasoundoredr.Designer.cs">
+      <DependentUpon>Ultrasoundoredr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UltrasoundReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UltrasoundReport.Designer.cs">
+      <DependentUpon>UltrasoundReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ultrasoundresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ultrasoundresult.Designer.cs">
+      <DependentUpon>ultrasoundresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UltrasoundRsultview.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ultrasounview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ultrasounview.designer.cs">
+      <DependentUpon>ultrasounview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ultrsasoundrequst.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vital Signss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vital Signss.Designer.cs">
+      <DependentUpon>Vital Signss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VitalBiz.cs" />
+    <Compile Include="Ward.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="X-rayelementadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X-rayelementadd.designer.cs">
+      <DependentUpon>X-rayelementadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X-rayorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X-rayorder.Designer.cs">
+      <DependentUpon>X-rayorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X-rayreportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X-rayreportForm.Designer.cs">
+      <DependentUpon>X-rayreportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xray.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Xrayentityadd.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="xraygroup.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Xrayreports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Xrayreports.Designer.cs">
+      <DependentUpon>Xrayreports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xrayrequ.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="xrayrequst.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xrayrequst.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="xrayrequst.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xrayrequst.tt</DependentUpon>
+    </Compile>
+    <Compile Include="xrayrequst.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xrayrequst.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="xrayresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xrayresult.Designer.cs">
+      <DependentUpon>xrayresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xrayresultview.cs">
+      <DependentUpon>HMSgeneral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="xryrsuview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xryrsuview.Designer.cs">
+      <DependentUpon>xryrsuview.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="account Report.resx">
+      <DependentUpon>account Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllPatientsForm.resx">
+      <DependentUpon>AllPatientsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments.resx">
+      <DependentUpon>Appointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bedwards.resx">
+      <DependentUpon>bedwards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BirthDayregistration.resx" />
+    <EmbeddedResource Include="BranchForm.resx">
+      <DependentUpon>BranchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charging.resx">
+      <DependentUpon>Charging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctscanorder.resx">
+      <DependentUpon>Ctscanorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTscanview.resx">
+      <DependentUpon>CTscanview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deathregistration.resx">
+      <DependentUpon>Deathregistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department_Form.resx">
+      <DependentUpon>Department_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocterAppointmnet.resx">
+      <DependentUpon>DocterAppointmnet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docters.resx">
+      <DependentUpon>Docters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docterview.resx">
+      <DependentUpon>Docterview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drug Interaction.resx">
+      <DependentUpon>Drug Interaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugAdding.resx">
+      <DependentUpon>DrugAdding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugIndex.resx">
+      <DependentUpon>DrugIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECGorder.resx">
+      <DependentUpon>ECGorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="extara.resx">
+      <DependentUpon>extara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labmelesemasayaform.resx">
+      <DependentUpon>Labmelesemasayaform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="labmelsemasaya.resx">
+      <DependentUpon>labmelsemasaya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="labrepo.resx">
+      <DependentUpon>labrepo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frntPart.resx">
+      <DependentUpon>frntPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontOfficeForm.resx">
+      <DependentUpon>FrontOfficeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inpatient .resx">
+      <DependentUpon>inpatient .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvestigationOrder.resx">
+      <DependentUpon>InvestigationOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemImport.resx">
+      <DependentUpon>ItemImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labratory.resx">
+      <DependentUpon>Labratory.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabratoryOrder.resx">
+      <DependentUpon>LabratoryOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabreadingResult.resx">
+      <DependentUpon>LabreadingResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labrprt.resx">
+      <DependentUpon>Labrprt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabTestitem.resx">
+      <DependentUpon>LabTestitem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medhanit.resx">
+      <DependentUpon>medhanit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalcerteficateForm.resx">
+      <DependentUpon>MedicalcerteficateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medicalcerteficateview.resx">
+      <DependentUpon>medicalcerteficateview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicalcerteficatorder.resx">
+      <DependentUpon>Medicalcerteficatorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newfrontpart.resx">
+      <DependentUpon>Newfrontpart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewPatientsWaitingListForm.resx">
+      <DependentUpon>NewPatientsWaitingListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPDs.resx">
+      <DependentUpon>OPDs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Outpaitent.resx">
+      <DependentUpon>Outpaitent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paitenthistory.resx">
+      <DependentUpon>Paitenthistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientEditorForm.resx">
+      <DependentUpon>PatientEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perscri.resx">
+      <DependentUpon>Perscri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy.resx">
+      <DependentUpon>Pharmacy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="possition_Form.resx">
+      <DependentUpon>possition_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressNote.resx">
+      <DependentUpon>ProgressNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ptnthistrrepry.resx">
+      <DependentUpon>ptnthistrrepry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RefferForm.resx">
+      <DependentUpon>RefferForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reffermelse.resx">
+      <DependentUpon>Reffermelse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Refferorder.resx">
+      <DependentUpon>Refferorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splush.resx">
+      <DependentUpon>Splush.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="srviccharge.resx">
+      <DependentUpon>srviccharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffRegistrations.resx">
+      <DependentUpon>StaffRegistrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaxType.resx">
+      <DependentUpon>TaxType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ultrasoudmelse.resx">
+      <DependentUpon>Ultrasoudmelse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ultrasoundmelseresult.resx">
+      <DependentUpon>Ultrasoundmelseresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ultrasoundoredr.resx">
+      <DependentUpon>Ultrasoundoredr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UltrasoundReport.resx">
+      <DependentUpon>UltrasoundReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ultrasoundresult.resx">
+      <DependentUpon>ultrasoundresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ultrasounview.resx">
+      <DependentUpon>ultrasounview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vital Signss.resx">
+      <DependentUpon>Vital Signss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X-rayelementadd.resx">
+      <DependentUpon>X-rayelementadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X-rayorder.resx">
+      <DependentUpon>X-rayorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X-rayreportForm.resx">
+      <DependentUpon>X-rayreportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xrayreports.resx">
+      <DependentUpon>Xrayreports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrayresult.resx">
+      <DependentUpon>xrayresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xryrsuview.resx">
+      <DependentUpon>xryrsuview.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <EntityDeploy Include="drugitemmodel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>drugitemmodel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="drugitemmodel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>drugitemmodel.edmx</DependentUpon>
+      <LastGenOutput>drugitemmodel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="drugitemmodel.edmx.diagram">
+      <DependentUpon>drugitemmodel.edmx</DependentUpon>
+    </None>
+    <None Include="drugitemmodel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>drugitemmodel.edmx</DependentUpon>
+      <LastGenOutput>drugitemmodel.cs</LastGenOutput>
+    </None>
+    <None Include="HMSDataSet.xsc">
+      <DependentUpon>HMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDataSet.xss">
+      <DependentUpon>HMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDataSet1.xsc">
+      <DependentUpon>HMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDataSet1.xss">
+      <DependentUpon>HMSDataSet1.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="Labtestitem.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Labtestitem1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="labrequstorder.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>labrequstorder.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="HMSgeneral.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HMSgeneral.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="HMSDataSet2.xsc">
+      <DependentUpon>HMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDataSet2.xss">
+      <DependentUpon>HMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDataSet3.xsc">
+      <DependentUpon>HMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDataSet3.xss">
+      <DependentUpon>HMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDataSet4.xsc">
+      <DependentUpon>HMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDataSet4.xss">
+      <DependentUpon>HMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDataSet5.xsc">
+      <DependentUpon>HMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDataSet5.xss">
+      <DependentUpon>HMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDataSet6.xsc">
+      <DependentUpon>HMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDataSet6.xss">
+      <DependentUpon>HMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="HMSgeneral.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HMSgeneral.edmx</DependentUpon>
+      <LastGenOutput>HMSgeneral.Context.cs</LastGenOutput>
+    </None>
+    <None Include="HMSgeneral.edmx.diagram">
+      <DependentUpon>HMSgeneral.edmx</DependentUpon>
+    </None>
+    <None Include="HMSgeneral.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HMSgeneral.edmx</DependentUpon>
+      <LastGenOutput>HMSgeneral.cs</LastGenOutput>
+    </None>
+    <None Include="labrequstorder.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>labrequstorder.edmx</DependentUpon>
+      <LastGenOutput>labrequstorder.Context.cs</LastGenOutput>
+    </None>
+    <None Include="labrequstorder.edmx.diagram">
+      <DependentUpon>labrequstorder.edmx</DependentUpon>
+    </None>
+    <None Include="labrequstorder.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>labrequstorder.edmx</DependentUpon>
+      <LastGenOutput>labrequstorder.cs</LastGenOutput>
+    </None>
+    <None Include="Labtestitem.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Labtestitem.edmx</DependentUpon>
+      <LastGenOutput>Labtestitem.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Labtestitem.edmx.diagram">
+      <DependentUpon>Labtestitem.edmx</DependentUpon>
+    </None>
+    <None Include="Labtestitem.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Labtestitem.edmx</DependentUpon>
+      <LastGenOutput>Labtestitem1.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Labresultentity.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="Ultrasoundmodel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Ultrasoundmodel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Ultrasoundmodel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Ultrasoundmodel.edmx</DependentUpon>
+      <LastGenOutput>Ultrasoundmodel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Ultrasoundmodel.edmx.diagram">
+      <DependentUpon>Ultrasoundmodel.edmx</DependentUpon>
+    </None>
+    <None Include="Ultrasoundmodel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Ultrasoundmodel.edmx</DependentUpon>
+      <LastGenOutput>Ultrasoundmodel.cs</LastGenOutput>
+    </None>
+    <EntityDeploy Include="xrayrequst.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>xrayrequst.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="xrayrequst.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>xrayrequst.edmx</DependentUpon>
+      <LastGenOutput>xrayrequst.Context.cs</LastGenOutput>
+    </None>
+    <None Include="xrayrequst.edmx.diagram">
+      <DependentUpon>xrayrequst.edmx</DependentUpon>
+    </None>
+    <None Include="xrayrequst.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>xrayrequst.edmx</DependentUpon>
+      <LastGenOutput>xrayrequst.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hospital.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

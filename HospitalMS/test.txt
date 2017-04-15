@@ -1,0 +1,1 @@
+Data Source=DESKTOP-KCA0S6M;Initial Catalog=HMS;Persist Security Info=True;User ID=sa;Password=123456
